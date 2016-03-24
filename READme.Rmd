@@ -3,23 +3,6 @@ title: "README"
 author: "STrabucco"
 date: "March 24, 2016"
 output: html_document
----
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
-```{r, echo=FALSE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 ---
 The YY1_CHIP.R file contains R script that opens CHIP-seq data from a local file (YY1 Factor data for GM12878 cell line from: http://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=wgEncodeSydhTfbs) and processes using ChIPseeker package to load and annotate peaks. This file also cleans up the annotation to remove duplicates and any NA values in the SYMBOL feature.
