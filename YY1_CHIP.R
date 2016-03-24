@@ -20,6 +20,14 @@ YY1Promoter<-YY1Names[grepl("Promoter", YY1Names$annotation),]
 YY1PromoterClean<-YY1Promoter[!duplicated(YY1Promoter$SYMBOL),]
 YY1noNA<-YY1PromoterClean[!(is.na(YY1PromoterClean$SYMBOL)), ]
 
+#to search for YY1 targets from ChIP-Seq data
+#YY1AllClean<-YY1Names[!duplicated(YY1Names$SYMBOL), ]
+#YY1allnoNA<-YY1AllClean[!(is.na(YY1AllClean$SYMBOL)), ]
+
+#Foxo<-YY1allnoNA[grepl("FOXO", YY1allnoNA$SYMBOL),]
+#Foxo
+
+
 
 #download and load EZH2 file
 EZH2File<-read.csv("EZH2Table.csv")
